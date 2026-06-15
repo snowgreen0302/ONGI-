@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="#B7D89A">
+
+    <!-- 제목 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="기부 단체 모아보기"
+
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+
+        android:textColor="#2F2B3A"
+
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="28dp"/>
+
+
+    <!-- 검색창 -->
+
+    <EditText
+
+        android:id="@+id/edtSearch"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="52dp"
+
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginTop="18dp"
+
+        android:hint="🔍 단체명 · 분야 · 지역 검색"
+
+        android:textSize="18sp"
+
+        android:paddingStart="16dp"
+
+        android:background="#F7F4EE"/>
+
+
+
+    <!-- 필터 -->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginTop="16dp">
+
+        <Spinner
+
+            android:id="@+id/spinnerCategory"
+
+            android:layout_width="0dp"
+
+            android:layout_height="48dp"
+
+            android:layout_weight="1"
+
+            android:background="#F7F4EE"/>
+
+
+        <Space
+
+            android:layout_width="16dp"
+
+            android:layout_height="wrap_content"/>
+
+
+        <Spinner
+
+            android:id="@+id/spinnerRegion"
+
+            android:layout_width="0dp"
+
+            android:layout_height="48dp"
+
+            android:layout_weight="1"
+
+            android:background="#F7F4EE"/>
+
+    </LinearLayout>
+
+
+    <!-- 카드 목록 -->
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+
+        android:padding="8dp"
+
+        android:paddingBottom="100dp"
+
+        android:clipToPadding="false"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="8dp"
+
+    card_view:cardCornerRadius="20dp"
+    card_view:cardBackgroundColor="#F7F4EE"
+
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="18dp">
+
+        <!-- 카테고리 뱃지 -->
+
+        <TextView
+            android:id="@+id/txtCategory"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/category_badge"
+
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+
+            android:text="보건복지"
+
+            android:textStyle="bold"
+            android:textSize="12sp"
+
+            android:textColor="#44612D"/>
+
+        <!-- 단체명 -->
+
+        <TextView
+            android:id="@+id/txtName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="14dp"
+
+            android:text="프란치스코사회복지회"
+
+            android:textStyle="bold"
+
+            android:textSize="18sp"
+
+            android:textColor="#222222"
+
+            android:maxLines="2"/>
+
+        <!-- 주소 -->
+
+        <TextView
+            android:id="@+id/txtAddress"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+
+            android:text="강원특별자치도 원주시..."
+
+            android:textSize="13sp"
+
+            android:textColor="#666666"
+
+            android:maxLines="2"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

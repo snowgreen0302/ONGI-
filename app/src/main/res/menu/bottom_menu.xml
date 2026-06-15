@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_browse"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="모아보기"/>
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/nav_ai"
+        android:title="AI상담"
+        android:icon="@android:drawable/ic_menu_help"/>
+
+    <item
+        android:id="@+id/nav_my"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="MY"/>
+
+</menu>

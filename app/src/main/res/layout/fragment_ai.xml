@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:background="#B7D89A"
+
+    android:padding="24dp">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="🤖 AI 상담"
+
+        android:textStyle="bold"
+
+        android:textSize="30sp"/>
+
+
+    <EditText
+
+        android:id="@+id/edtQuestion"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        android:hint="예) 보건 복지에 관심있어요"
+
+        android:background="#F7F4EE"
+
+        android:padding="16dp"/>
+
+
+    <Button
+
+        android:id="@+id/btnAsk"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+
+        android:text="AI 상담하기"/>
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+
+        android:gravity="top">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="🤖"
+
+            android:textSize="28sp"
+
+            android:layout_marginEnd="10dp"/>
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            app:cardCornerRadius="20dp"
+
+            app:cardBackgroundColor="#F7F4EE"
+
+            app:cardElevation="2dp">
+
+
+            <TextView
+
+                android:id="@+id/txtAnswer"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:padding="18dp"
+
+                android:text="안녕하세요!\n\n어떤 기부를 하고 싶으신가요? 😊"
+
+                android:textColor="#333333"
+
+                android:textSize="18sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerRecommend"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+
+        android:id="@+id/btnNext"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+
+        android:text="마음에 안들어요"/>
+
+
+</LinearLayout>

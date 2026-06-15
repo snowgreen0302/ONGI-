@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#B7D89A">
+
+    <!-- 스크롤 영역 -->
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:paddingBottom="110dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="24dp">
+
+
+            <!-- 뒤로가기 -->
+
+            <ImageButton
+
+                android:id="@+id/btnBack"
+
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+
+                android:src="@android:drawable/ic_media_previous"
+
+                android:background="@android:color/transparent"/>
+
+
+            <!-- 기관명 -->
+
+            <TextView
+
+                android:id="@+id/detailName"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="기관명"
+
+                android:textSize="28sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#222222"
+
+                android:layout_marginTop="24dp"/>
+
+
+            <!-- 카테고리 -->
+
+            <TextView
+
+                android:id="@+id/detailCategory"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="보건복지"
+
+                android:textSize="16sp"
+
+                android:textStyle="bold"
+
+                android:textColor="#44612D"
+
+                android:background="@drawable/category_badge"
+
+                android:paddingStart="14dp"
+
+                android:paddingEnd="14dp"
+
+                android:paddingTop="6dp"
+
+                android:paddingBottom="6dp"
+
+                android:layout_marginTop="16dp"/>
+
+
+            <!-- 전화 -->
+
+            <TextView
+
+                android:id="@+id/detailPhone"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="☎ 전화번호"
+
+                android:textSize="18sp"
+
+                android:layout_marginTop="28dp"/>
+
+
+            <!-- 주소 -->
+
+            <TextView
+
+                android:id="@+id/detailAddress"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:text="📍 주소"
+
+                android:textSize="18sp"
+
+                android:layout_marginTop="14dp"/>
+
+
+
+            <!-- 홈페이지 -->
+
+            <Button
+
+                android:id="@+id/btnHomepage"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="36dp"
+
+                android:text="🌐 홈페이지 이동"/>
+
+
+            <!-- 전화 -->
+
+            <Button
+
+                android:id="@+id/btnCall"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+
+                android:text="☎ 전화 걸기"/>
+
+
+            <!-- 주소 복사 -->
+
+            <Button
+
+                android:id="@+id/btnCopyAddress"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp"
+
+                android:text="📋 주소 복사"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- 하단바 -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/bottomNavigationView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="85dp"
+
+        android:layout_gravity="bottom"
+
+        android:layout_marginStart="20dp"
+
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/bg_bottom_nav"
+
+        android:elevation="12dp"
+
+        app:itemIconSize="24dp"
+
+        app:itemIconTint="@color/nav_item_color"
+
+        app:itemTextColor="@color/nav_item_color"
+
+        app:itemRippleColor="@android:color/transparent"
+
+        app:labelVisibilityMode="labeled"
+
+        app:itemBackground="@drawable/nav_selected_bg"
+
+        app:menu="@menu/bottom_menu"/>
+
+</FrameLayout>
