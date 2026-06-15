@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="마이페이지"
+            android:text="On-Gi"
             android:textStyle="bold"
             android:textSize="24sp"
             android:textColor="#000000"/>
